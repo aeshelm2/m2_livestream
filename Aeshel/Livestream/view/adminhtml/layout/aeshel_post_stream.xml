@@ -1,0 +1,12 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <update handle="styles"/>
+    <head>
+        <css src="Aeshel_Livestream::css/video-js.min.css" rel="stylesheet" type="text/css"  />
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <uiComponent name="livestream_form"/>
+            <block class="Aeshel\Livestream\Block\Live\Stream" name="aeshel_livestream" as="stream" template="livestream/output.phtml" cacheable="false"/>
+        </referenceContainer>
+    </body>
+</page>
