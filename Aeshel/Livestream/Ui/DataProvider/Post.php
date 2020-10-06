@@ -62,16 +62,16 @@ class Post extends \Magento\Ui\DataProvider\AbstractDataProvider
         // return $this->collection;
     }
 
-    public function getData()
-    {
-        if (isset($this->loadedData)) {
-            $this->loadedData['name'] = ['secret key'];
-            return $this->loadedData;
-        }
-        $items = $this->collection->getItems();
-        foreach ($items as $value) {
-            $this->loadedData[$value->getId()] = $value->getData();
-        }
-        return $this->loadedData;
-    }
+    // public function getData()
+    // {
+    //     if (isset($this->loadedData)) {
+    //         $this->loadedData['name'] = ['secret key'];
+    //         return $this->loadedData;
+    //     }
+    //     $items = $this->collection->getItems();
+    //     foreach ($items as $value) {
+    //         $this->loadedData[$value->getId()] = $value->getData();
+    //     }
+    //     return $this->loadedData;
+    // }
 }

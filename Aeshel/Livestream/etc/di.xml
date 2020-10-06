@@ -12,4 +12,6 @@
             <argument name="resourceModel" xsi:type="string">Aeshel\Livestream\Model\ResourceModel\Post</argument>
         </arguments>
     </virtualType>
+
+    <preference for="Magento\Ui\Component\Form\Field" type="Aeshel\Livestream\Ui\Form\Stream" />
 </config>
